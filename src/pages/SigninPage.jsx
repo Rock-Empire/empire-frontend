@@ -1,10 +1,10 @@
-import React from "react";
-import Signup from "../components/Signup/Signup";
+import React from 'react';
+import SignIn from '../components/signin/Signin';
+import BackgroundPic from '../assets/images/login-image.png';
 import Vector from "../assets/images/Vector (1).png";
 import Logo from "../assets/images/Rectangle 25.png";
-import BackgroundPic from "../assets/images/backgroundImage.png";
 
-function SignupPage() {
+function Signin() {
   return (
     <div className='flex gap-8 h-[100vh] font-normal sm-sc:gap-1'>
       <div
@@ -24,10 +24,10 @@ function SignupPage() {
         <img className='w-[110px]' src={Logo} alt='Company logo' />
       </div>
       <div className='w-[500px] m-auto sm-sc:w-[300px]'>
-        <Signup />
+        <SignIn />
       </div>
     </div>
-  );
+  )
 }
 
-export default SignupPage;
+export default Signin

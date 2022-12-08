@@ -14,7 +14,7 @@ function SocialLink() {
         ></div>
         <div className='flex justify-between items-center w-[1200px] m-auto mt-[1rem] sm-sc:w-[350px] mini-sc:w-[700px] lg-sc:w-[1000px]'>
           <div>
-            <p className='text-[16px] sm-sc:text-[12px]'>cc@Rock Empire 2022</p>
+            <p className='text-[16px] sm-sc:text-[12px] font-normal'> © Copyright {new Date().getFullYear()} - The Rock Empire.﻿</p>
           </div>
           <div>
             <ul className='flex justify-center gap-4 items-center'>

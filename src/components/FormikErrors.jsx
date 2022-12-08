@@ -1,31 +1,8 @@
-// // import React from 'react';
-// // import { GoogleMap, useLoadScript } from '@react-google-maps/api';
-// // import './maps.css';
-
-// // export default function Map() {
-
-// //   return (
-// //     <div>
-// //       <Maps />
-// //     </div>
-// //   )
-// // }
-
-// export default function Maps() {
-//   // const { isLoaded } = useLoadScript({
-//   //   googleMapsApiKey: 'AIzaSyCEVPWp4Uh3G1zgsFcfP57kftgKziTOylw',
-//   // });
-
-//   // if(!isLoaded) return <div>loading...</div>
-//   return (
-//     // <GoogleMap zoom={10} center={{ lat:6.4334, lng: 3.5426 }} mapContainerClassName='maps'>
-//     //   {/* <Maker /> */}
-//     // </GoogleMap>
-
-//   )
-// }
-
 import * as Yup from "yup";
+import { sub } from "date-fns/fp"
+
+const phoneRegExp =
+  /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 
 export const ContactSchema = Yup.object().shape({
   email: Yup.string()
@@ -60,14 +37,13 @@ export const RegisterSchema = Yup.object().shape({
     .min(3, "Last name is too short")
     .max(50, "The last name you entered is too long")
     .required("Required"),
-  phoneNumber: Yup.string()
-    .min(10, "Phone number is too short")
-    .max(11, "Phone number is too long")
-    .required("Required"),
+  phoneNumber: Yup.string().matches(phoneRegExp, "Phone number is not valid"),
   email: Yup.string()
     .email("The email address you entered is invalid")
     .required("Required"),
-  dateOfBirth: Yup.string().required("Required"),
+  dateOfBirth: Yup.date()
+    .required()
+    .max(sub({ years: 18 }, new Date()), "User must be over 18 years old"),
   password: Yup.string()
     .min(1, "The password you entered is too short")
     .max(50, "The password you entered is too long")

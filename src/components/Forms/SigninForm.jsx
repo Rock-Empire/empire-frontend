@@ -12,7 +12,7 @@ function SigninForm() {
   };
 
   return (
-    <div>
+    <React.Fragment>
       <form className=''>
         <div className='mb-[3rem]'>
           <label htmlFor='email'>
@@ -57,7 +57,7 @@ function SigninForm() {
           />
         </div>
       </form>
-    </div>
+    </React.Fragment>
   )
 }
 

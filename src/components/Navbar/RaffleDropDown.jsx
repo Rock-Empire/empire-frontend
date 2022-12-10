@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink as NavLinkPage } from "react-router-hash-link";
 import DropDown1 from "../../assets/images/drop-down-img1.png";
 import DropDown2 from "../../assets/images/drop-down-img2.png";
 import DropDown3 from "../../assets/images/drop-down-img3.png";
-import PastWinners from '../LandingPageComponents/Winners/Winners'
+// import PastWinners from '../LandingPageComponents/Winners/Winners'
 
 function RaffleDropDown() {
   return (
@@ -42,7 +43,7 @@ function RaffleDropDown() {
             </div>
           </div>
         </Link>
-        <Link to={PastWinners} smooth duration='500ms'>
+        <NavLinkPage exact to='#pastWinners' smooth duration='500ms'>
           <div className='flex gap-[1rem] mt-[1rem] sm-sc:mt-[0rem]'>
             <div>
               <img src={DropDown1} alt='' />
@@ -52,7 +53,7 @@ function RaffleDropDown() {
               <p>See all past winners</p>
             </div>
           </div>
-        </Link>
+        </NavLinkPage>
       </div>
     </React.Fragment>
   );

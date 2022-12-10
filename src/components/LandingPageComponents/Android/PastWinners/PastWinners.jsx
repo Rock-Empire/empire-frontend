@@ -6,7 +6,7 @@ import PastWinnersImage3 from "../../../../assets/images/winner3.png";
 function PastWinners() {
   return (
     <React.Fragment>
-      <div className='text-center mt-[4rem] font-normal'>
+      <div className='text-center mt-[4rem] font-normal' id='pastWinners'>
         <h1 className='text-[34px] underline decoration-treColor1 decoration-2 sm-sc:text-[24px]'>See Our Past Winners</h1>
         <div className='grid grid-cols-3 pt-[3rem] w-[900px] m-auto gap-[2rem] sm-sc:grid-cols-1 sm-sc:m-auto sm-sc:w-[300px] mini-sc:w-[900px] mini-sc:gap-[1rem]'>
           <div

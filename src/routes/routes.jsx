@@ -13,9 +13,11 @@ import Blog from '../pages/Blog';
 import ContactUs from '../pages/ContactUs';
 import FAQ from '../pages/FAQ';
 import PlayRaffle from '../pages/PlayRaffle';
+// import PastWinners from '../components/LandingPageComponents/Android/PastWinners/PastWinners';
 
 
 function Routes() {
+  if(!Route) return <div>loading...</div>
   return (
     <div>
       <Router>
@@ -30,6 +32,7 @@ function Routes() {
           <Route path='/FAQ' element={<FAQ />} />
           <Route path='/play-ticket' element={<PlayRaffle />} />
           <Route path='/support' element={<PlayRaffle />} />
+          {/* <Route exact path='/past-winners' element={<PastWinners />} /> */}
         </RouterCover>
       </Router>
     </div>

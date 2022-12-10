@@ -29,7 +29,7 @@ function FAQQuestions() {
             <Panel className='text-[16px] font-600 text-[#141204]' header='Can non profit work with you' key='4'>
               <p className='text-[14px]'>Yes</p>
             </Panel>
-            <Panel className='text-[16px] font-600 text-[#141204]' header='Can I multiple entries per raffle' key='5'>
+            <Panel className='text-[16px] font-600 text-[#141204]' header='Can I have multiple entries per raffle' key='5'>
               <p className='text-[14px]'>Yes, you can purchase as many tickets as you wish.</p>
             </Panel>
             <Panel className='text-[16px] font-600 text-[#141204]' header='Do you provide any support' key='6'>

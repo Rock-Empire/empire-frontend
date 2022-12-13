@@ -7,10 +7,10 @@ const WinnersData = [
     luckyNumber: {
       1: 1,
       2: 10,
-      3: 15,
+      3: 55,
       4: 34,
       5: 50,
-      6: 55
+      6: 75
     }
   },
   {
@@ -19,7 +19,7 @@ const WinnersData = [
     drawDate: '12/1/2022',
     price: 10000,
     luckyNumber: {
-      1: 1,
+      1: 21,
       2: 10,
       3: 15,
       4: 34,
@@ -63,8 +63,8 @@ const WinnersData = [
     luckyNumber: {
       1: 1,
       2: 10,
-      3: 15,
-      4: 34,
+      3: 56,
+      4: 32,
       5: 50,
       6: 55
     }

@@ -9,7 +9,7 @@ import SigninPage from '../pages/SigninPage';
 import Homepage from '../pages/Homepage';
 import NotFound from '../pages/NotFound';
 import AboutUsPage from '../pages/AboutUsPage';
-import Blog from '../pages/Blog';
+import BlogPage from '../pages/BlogPage';
 import ContactUs from '../pages/ContactUs';
 import FAQ from '../pages/FAQ';
 import PlayRafflePage from '../pages/PlayRafflePage';
@@ -26,7 +26,7 @@ function Routes() {
           <Route path='/sign-up' element={<SignupPage />} />
           <Route path='/sign-in' element={<SigninPage />} />
           <Route path='/about-us' element={<AboutUsPage />} />
-          <Route path='/blog' element={<Blog />} />
+          <Route path='/blog' element={<BlogPage />} />
           <Route path='/contact-us' element={<ContactUs />} />
           <Route path='/FAQ' element={<FAQ />} />
           <Route path='/play-ticket' element={<PlayRafflePage />} />

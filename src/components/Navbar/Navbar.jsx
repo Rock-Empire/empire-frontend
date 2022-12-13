@@ -27,7 +27,7 @@ function Navbar() {
 
   return (
     <React.Fragment>
-      <div className='sm-sc:bg-[#FFFFFC] text-[#141204] sm-sc:absolute sm-sc:right-0 sm-sc:left-0 mini-sc:absolute mini-sc:right-0 mini-sc:left-0'>
+      <div className='sm-sc:bg-[#FFFFFC] z-20 text-[#141204] sm-sc:absolute sm-sc:right-0 sm-sc:left-0 mini-sc:absolute mini-sc:right-0 mini-sc:left-0'>
         <div className=''>
           <div className='hidden sm-sc:flex sm-sc:relative sm-sc:justify-between sm-sc:align-center'>
             <div className=''>

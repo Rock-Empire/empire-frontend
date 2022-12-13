@@ -14,7 +14,7 @@ function Winners() {
           }}>
             <img className='hidden absolute w-[200px] top-[133.5rem] left-[77.4rem] sm-sc:hidden lg-sc:hidden' src={WinnerCircle} alt="" />
         <div
-          className='font-normal z-[10] flex flex-col text-center w-[900px] items-center m-auto sm-sc:mt-[0rem] sm-sc:w-[300px] mini-sc:mt-[1rem] lg-sc:w-[800px]'
+          className='font-normal z-[10] flex flex-col text-center w-[900px] items-center m-auto sm-sc:mt-[0rem] sm-sc:w-[300px] mini-sc:mt-[1rem] lg-sc:w-[800px] mini-sc:w-[500px]'
         >
           <h1 className='text-[34px] sm-sc:text-[24px] text-[#E6EAFB]'>New Winners Announced every 4 weeks!</h1>
           <p className='text-[16px] sm-sc:text-[14px] text-[#E6EAFB]'>
@@ -23,7 +23,7 @@ function Winners() {
           </p>
           <div className='border-8 mt-[2rem] border-[#E6EAFB] rounded-2xl'>
             <table
-              className='w-[900px] h-[400px] m-3 m-auto sm-sc:w-[330px] mini-sc:w-[700px]'
+              className='w-[900px] h-[400px] m-3 m-auto sm-sc:w-[330px] mini-sc:w-[600px]'
               style={{}}
             >
               <thead

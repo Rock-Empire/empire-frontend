@@ -9,7 +9,7 @@ function WhatWeStandFor() {
   return (
     <div className='mt-[4rem] text-center font-normal sm-sc:mt-[-10rem] mini-sc:mt-[-17rem]'>
       <h1 className='text-[32px] underline decoration-2 decoration-treColor1 sm-sc:pb-[2rem] sm-sc:text-[24px] mini-sc:pb-[2rem]'>What We Stand For</h1>
-      <div className='flex w-[1300px] m-auto gap-[1rem] sm-sc:flex-col sm-sc:w-[350px] mini-sc:w-[900px]'>
+      <div className='flex w-[1300px] m-auto gap-[1rem] sm-sc:flex-col sm-sc:w-[350px] mini-sc:w-[700px]'>
         <div className='p-[1rem] bg-[#ffffff] h-[300px] flex flex-col justify-center items-center text-center rounded-md w-[100%]'>
           <div className='flex justify-center'>
             <img className='w-[64px] h-[57px]' src={Img1} alt='' />
@@ -41,7 +41,7 @@ function WhatWeStandFor() {
           </p>
         </div>
       </div>
-      <div className='flex w-[800px] m-auto gap-[1rem] mt-[1rem] sm-sc:flex-col sm-sc:w-[350px] mini-sc:w-[600px]'>
+      <div className='flex w-[800px] m-auto gap-[1rem] mt-[1rem] sm-sc:flex-col sm-sc:w-[350px] mini-sc:w-[500px]'>
         <div className='p-[1rem] bg-[#ffffff] h-[300px] flex flex-col justify-center items-center text-center rounded-md w-[100%]'>
           <div className='flex justify-center'>
             <img className='w-[64px] h-[57px]' src={Img4} alt='' />

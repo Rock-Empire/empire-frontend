@@ -5,7 +5,7 @@ import MissionImg from "../../assets/images/mission.png";
 
 function ValueStatement() {
   return (
-    <div className='text-center w-[1400px] font-normal m-auto mb-[1rem] h-[800px] sm-sc:w-[350px] mini-sc:w-[900px] lg-sc:w-[1200px]'>
+    <div className='text-center w-[1400px] font-normal m-auto mb-[1rem] h-[800px] sm-sc:w-[350px] mini-sc:w-[700px] lg-sc:w-[1200px]'>
       <h1 className='text-[34px] underline decoration-2 decoration-treColor1 pt-[3rem] pb-[2rem] sm-sc:text-[24px]'>
         Our Value Statements
       </h1>
@@ -30,7 +30,7 @@ function ValueStatement() {
           </p>
         </div>
         <div className='flex flex-col gap-4 w-[100%]'>
-          <div className='bg-[#ffffff] h-[300px] flex flex-col justify-center items-center text-center rounded-md w-[100%]'>
+          <div className='bg-[#ffffff] h-[300px] flex flex-col justify-center items-center text-center rounded-md w-[100%] mini-sc:h-[400px]'>
             <div className='flex justify-center sm-sc:mt-[3rem]'>
               <img src={VisionImg} alt='' />
             </div>
@@ -44,7 +44,7 @@ function ValueStatement() {
               to share that blessing with the people of Nigeria.
             </p>
           </div>
-          <div className='bg-[#ffffff] h-[300px] flex flex-col justify-center items-center text-center rounded-md'>
+          <div className='bg-[#ffffff] h-[300px] flex flex-col justify-center items-center text-center rounded-md mini-sc:h-[400px]'>
             <div className='flex justify-center sm-sc:mt-[3rem]'>
               <img src={MissionImg} alt='' />
             </div>

@@ -30,7 +30,7 @@ function Winners() {
           </p>
           <div className='border-8 mt-[2rem] border-[#E6EAFB] rounded-2xl'>
             <table
-              className='w-[900px] h-[400px] m-3 m-auto sm-sc:w-[330px] mini-sc:w-[700px]'
+              className='w-[900px] h-[400px] m-3 m-auto sm-sc:w-[330px] mini-sc:w-[600px]'
               style={{}}
             >
               <thead

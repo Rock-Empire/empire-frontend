@@ -6,8 +6,8 @@ import AndroidImage from "../../assets/images/andriodimg.png";
 
 function HowToPlay() {
   return (
-    <div className='flex items-center justify-between font-normal sm-sc:flex-col'>
-      <div className='w-[100%] h-[400px] p-[3rem] flex flex-col gap-[3rem] sm-sc:h-[]'>
+    <div className='flex items-center justify-between font-normal mt-[-9rem] sm-sc:flex-col sm-sc:mt-[-1rem]'>
+      <div className='w-[100%] h-[300px] p-[3rem] flex flex-col gap-[3rem] sm-sc:h-[]'>
         <h1 className='text-center text-[34px] font-600'>How to Play</h1>
         <div className='flex gap-[1rem] items-center'>
           <img className='rounded-[50%] h-[60px]' src={ChooseImg} alt='' />
@@ -31,7 +31,7 @@ function HowToPlay() {
           </div>
         </div>
       </div>
-      <div className='h-[700px] w-[900px] sm-sc:h-[400px] sm-sc:w-[100%] mini-sc:w-[800px] mini-sc:h-[600px]'>
+      <div className='h-[700px] w-[900px] sm-sc:h-[400px] sm-sc:w-[100%] sm-sc:mt-[6rem] mini-sc:w-[800px] mini-sc:h-[600px]'>
         <img src={AndroidImage} alt='' />
       </div>
     </div>

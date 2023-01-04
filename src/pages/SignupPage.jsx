@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Signup from "../components/Signup/Signup";
 import Vector from "../assets/images/Vector (1).png";
 import Logo from "../assets/images/Rectangle 25.png";
@@ -16,11 +17,13 @@ function SignupPage() {
           backgroundSize: "cover",
         }}
       >
-        <img
-          className='w-[50px] ml-[10px] mt-[2rem] mb-[4rem]'
-          src={Vector}
-          alt='Back arrow'
-        />
+        <Link to={''}>
+          <img
+            className='w-[50px] ml-[10px] mt-[2rem] mb-[4rem]'
+            src={Vector}
+            alt='Back arrow'
+          />
+        </Link>
         <img className='w-[110px]' src={Logo} alt='Company logo' />
       </div>
       <div className='w-[500px] m-auto sm-sc:w-[300px]'>

@@ -7,13 +7,13 @@ import HowImg from "../../../assets/images/play-cricle 2.png";
 const Showcase = () => {
   return (
     <React.Fragment>
-      <div className='flex items-center justify-center w-full h-[60vh] text-center object-cover'>
+      <div className='flex items-center justify-center w-full h-[70vh] text-center object-cover'>
         <video
           src={heroVideo}
           autoPlay
           loop
           muted
-          className='object-cover h-[100vh] w-full absolute -z-10'
+          className='object-cover h-[100vh] mt-[12rem] w-full absolute -z-10'
         />
         <div
           className='object-cover h-[100vh] w-full absolute -z-10'

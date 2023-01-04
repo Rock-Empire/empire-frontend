@@ -6,7 +6,7 @@ function AboutUsHero() {
     <div className='bg-no-repeat font-normal flex bg-cover text-center text-[#ffffff] items-center'
       style={{
         backgroundImage: `url(${Bg})`,
-        height: '60vh',
+        height: '70vh',
       }}
     >
       <div className='w-[500px] m-auto flex flex-col sm-sc:w-[300px]'>

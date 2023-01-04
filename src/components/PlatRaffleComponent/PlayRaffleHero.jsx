@@ -25,7 +25,7 @@ function PlayRaffleHero() {
         <div className='list-none flex gap-[2rem] pt-[3rem] font-bold'>
           {Data.map((data, i) => (
             <li
-              className='text-xl sm-sc:text-[14px] bg-[#E7E9EB] text-[#000000] p-[10px] w-[95px] h-[73px] sm-sc:w-[70px] sm-sc:'
+              className='text-xl sm-sc:text-[14px] bg-[#E7E9EB] text-[#000000] p-[10px] w-[95px] h-[73px] sm-sc:w-[70px] xs:w-[60px]'
               key={i}
             >
               {data.days}

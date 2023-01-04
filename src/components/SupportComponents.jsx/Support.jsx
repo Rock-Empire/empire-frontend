@@ -9,8 +9,6 @@ function Support() {
     ></iframe>
   );
 
-  console.log(Map)
-
   if(!Map) return <div>Loading...</div>;
   return (
     <div className=''>

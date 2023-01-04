@@ -6,7 +6,7 @@ import Lottery from "../../../assets/images/lottery.png";
 function HowToPlayBox() {
   return (
     <React.Fragment>
-      <div className='w-[1300px] m-auto sm-sc:w-[400px] mini-sc:w-[800px] lg-sc:w-[1100px]'>
+      <div className='w-[1300px] m-auto sm-sc:w-[400px] mini-sc:w-[800px] xs:w-[250px] lg-sc:w-[1100px]'>
         <div className='grid grid-cols-3 items-start leading-6 gap-[3rem] text-center justify-center align-center sm-sc:grid-cols-1 mini-sc:grid-cols-2'>
           <div className='bg-[#ffffff] h-[300px] flex flex-col justify-center items-center text-center rounded-md w-[100%]'>
             <div className='flex justify-center items-center'>

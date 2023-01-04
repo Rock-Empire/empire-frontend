@@ -9,9 +9,10 @@ import DropDown3 from "../../assets/images/drop-down-img3.png";
 function RaffleDropDown() {
   return (
     <React.Fragment>
-      <div className='w-[1000px] text-[14px] absolute right-[20%] font-normal m-auto grid grid-cols-3 gap-x-[1rem] items-center bg-[#ffffff] p-[2rem] mt-[-10px] sm-sc:grid-cols-1 sm-sc:gap-y-[1rem] sm-sc:static sm-sc:mt-[-17rem] sm-sc:right-[-2rem] sm-sc:w-[300px] sm-sc:overflow-x-hidden sm-sc:p-[.5rem] sm-sc:text-[12px] mini-sc:left-[5%] mini-sc:w-[800px]'>
+      <div className='w-[1000px] text-[14px] z-20 absolute right-[20%] font-normal m-auto grid grid-cols-3 gap-x-[1rem] items-center bg-[#ffffff] p-[2rem] mt-[-10px] sm-sc:w-[400px] sm-sc:grid-cols-1 sm-sc:gap-2 sm-sc:mt-[-16rem] sm-sc:mr-[-4rem] '>
+      {/* <div className='w-[1000px] z-20 text-[14px] absolute right-[20%] font-normal m-auto grid grid-cols-3 gap-x-[1rem] items-center bg-[#ffffff] p-[2rem] mt-[-10px] sm-sc:grid-cols-1 sm-sc:gap-y-[1rem] sm-sc:relative sm-sc:top-[-13rem] sm-sc:right-[-1.6rem] sm-sc:w-[320px] sm-sc:overflow-x-hidden sm-sc:p-[.5rem] sm-sc:text-[12px] sm-sc:h-[100%] mini-sc:left-[1%] mini-sc:w-[800px]'> */}
         <Link to='/play-ticket'>
-          <div className='flex gap-[1rem]'>
+          <div className='flex gap-[1rem] '>
             <div>
               <img src={DropDown2} alt='' />
             </div>

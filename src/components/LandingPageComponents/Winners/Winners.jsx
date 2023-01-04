@@ -20,7 +20,7 @@ function Winners() {
           src={WinnerCircle}
           alt=''
         />
-        <div className='font-normal z-[10] flex flex-col text-center w-[900px] items-center m-auto sm-sc:mt-[0rem] sm-sc:w-[300px] mini-sc:mt-[1rem] lg-sc:w-[800px]'>
+        <div className='font-normal z-[10] flex flex-col text-center w-[900px] items-center m-auto sm-sc:mt-[0rem] sm-sc:w-[300px] mini-sc:mt-[1rem] lg-sc:w-[800px] xs:w-[200px]'>
           <h1 className='text-[34px] sm-sc:text-[24px] text-[#E6EAFB]'>
             New Winners Announced every 4 weeks!
           </h1>
@@ -30,7 +30,7 @@ function Winners() {
           </p>
           <div className='border-8 mt-[2rem] border-[#E6EAFB] rounded-2xl'>
             <table
-              className='w-[900px] h-[400px] m-3 m-auto sm-sc:w-[330px] mini-sc:w-[600px]'
+              className='w-[900px] h-[400px] m-3 m-auto sm-sc:w-[330px] mini-sc:w-[600px] xs:w-[200px]'
               style={{}}
             >
               <thead

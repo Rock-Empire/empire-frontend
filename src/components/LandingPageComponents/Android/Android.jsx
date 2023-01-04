@@ -8,7 +8,7 @@ function Android() {
     <React.Fragment>
       <div>
         <div className='flex gap-[3rem] items-center justify-between pt-[3rem] sm-sc:flex-col'>
-          <div className='w-[400px] ml-[10rem] sm-sc:w-[350px] mini-sc:w-[400px] sm-sc:ml-[1rem]'>
+          <div className='w-[400px] ml-[10rem] sm-sc:w-[350px] mini-sc:w-[400px] sm-sc:ml-[1rem] xs:w-[290px]'>
             <h1 className='text-[48px] font-600 w-[500px] sm-sc:text-[32px]'>
               Available and
               <br /> Download Anytime!

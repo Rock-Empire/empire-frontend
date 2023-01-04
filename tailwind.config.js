@@ -11,7 +11,8 @@ module.exports = {
       },
       colors: {
         treColor1: '#ED3833',
-        textColor1: '#595959'
+        textColor1: '#595959',
+        treColor2: '#090F26',
       }
     },
   },

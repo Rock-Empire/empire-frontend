@@ -1,5 +1,5 @@
 import * as Yup from "yup";
-import { sub } from "date-fns/fp"
+import { sub } from "date-fns/fp";
 
 const phoneRegExp =
   /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
@@ -50,3 +50,49 @@ export const RegisterSchema = Yup.object().shape({
     .required("Required"),
   terms: Yup.string().required("I agree to all the Terms and Privacy policy"),
 });
+
+export const CheckoutSchema = Yup.object().shape({
+  firstName: Yup.string()
+    .min(3, "First name is too short")
+    .max(50, "The first name you entered is too long")
+    .required("Required"),
+  lastName: Yup.string()
+    .min(3, "Last name is too short")
+    .max(50, "The last name you entered is too long")
+    .required("Required"),
+  phoneNumber: Yup.string().matches(phoneRegExp, "Phone number is not valid"),
+  email: Yup.string()
+    .email("The email address you entered is invalid")
+    .required("Required"),
+  HowDidYouHearAboutUs: Yup.string().required("Required"),
+});
+
+export const PersonalSchema = Yup.object().shape({
+  firstName: Yup.string()
+    .min(3, "First name is too short")
+    .max(50, "The first name you entered is too long")
+    .required("Required"),
+  lastName: Yup.string()
+    .min(3, "Last name is too short")
+    .max(50, "The last name you entered is too long")
+    .required("Required"),
+  phoneNumber: Yup.string().matches(phoneRegExp, "Phone number is not valid"),
+  email: Yup.string()
+    .email("The email address you entered is invalid")
+    .required("Required"),
+  gender: Yup.string().required("Required"),
+  dateOfBirth: Yup.date()
+    .required()
+});
+
+export const PasswordSchema = Yup.object().shape({
+  currentPassword: Yup.string().required("Required"),
+  newPassword: Yup.string()
+  .min(1, "The password you entered is too short")
+  .max(50, "The password you entered is too long")
+  .required("Required"),
+  confirmPassword: Yup.string()
+  .min(1, "The password you entered is too short")
+  .max(50, "The password you entered is too long")
+  .required("Required")
+})

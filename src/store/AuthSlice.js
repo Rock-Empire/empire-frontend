@@ -19,7 +19,6 @@ const authReducer = createSlice({
       Cookies.remove("user");
       Cookies.remove("token");
       Cookies.remove("isAuthenticated");
-      // Cookies.clear();
       state.auth = false;
       state.user = null;
     },

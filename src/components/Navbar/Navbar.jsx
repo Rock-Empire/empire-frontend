@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Cookies from "js-cookie";
 import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { GrFormDown, GrFormUp } from "react-icons/gr";
@@ -9,10 +8,8 @@ import RaffleDropDown from "./RaffleDropDown";
 import SupportDropDown from "./SupportDropDown";
 import Button from "../Button";
 import UserDropDown from "../RegUserDashboard/UserDropDown";
-import isAuthenticated from "../../store/Auth";
 
 function Navbar() {
-  const navigate = useNavigate();
   const [showRaffleDropDown, setShowRaffleDropDown] = useState(false);
   const [showSupportDropDown, setShowSupportDropDown] = useState(false);
   const [showHamburgerMenu, setShowHamburgerMenu] = useState(false);

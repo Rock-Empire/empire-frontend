@@ -5,7 +5,7 @@ import Paystack from '../../../assets/images/paystack.png';
 
 function Sponsors() {
   return (
-    <div className='mt-[9.5rem] pt-[2rem] sm-sc:mt-[5rem] sm-sc:mt-[1rem]'>
+    <div className='mt-[8rem] pt-[2rem] sm-sc:mt-[5rem] sm-sc:mt-[1rem]'>
       <div className='flex justify-center gap-4 items-center '>
         <div className='' style={{borderTop: '3px solid #000000', width: '30%'}}></div>
         <div>

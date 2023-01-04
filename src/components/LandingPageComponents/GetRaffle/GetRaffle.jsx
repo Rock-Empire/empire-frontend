@@ -9,12 +9,12 @@ function GetRaffle() {
     <React.Fragment>
       <div className='grid grid-cols-2 font-normal gap-[5rem] item-center justify-center pt-[6rem] pb-[2rem] sm-sc:grid-cols-1 sm-sc:pt-[2rem] sm-sc:mb-[-15rem] mini-sc:gap-[0rem] mini-sc:pt-[2rem] lg-sc:gap-[17rem]'>
         <div className='w-[50%] sm-sc:w-[100%]'>
-          <div className='w-[700px] h-[600px] sm-sc:w-[350px] sm-sc:h-[150px] mini-sc:w-[350px] mini-sc:h-[100px]'>
+          <div className='w-[700px] h-[600px] sm-sc:w-[350px] sm-sc:h-[150px] mini-sc:w-[350px] mini-sc:h-[100px] xs:w-[250px] xs:h-[30px] '>
             <img src={GetRaffleImg} alt='' />
           </div>
         </div>
         <div className='w-[50%] py-[11rem] sm-sc:py-[9rem] mini-sc:py-[2rem]'>
-          <div className='w-[450px] sm-sc:w-[350px] sm-sc:m-4 mini-sc:w-[400px]'>
+          <div className='w-[450px] sm-sc:w-[350px] sm-sc:m-4 mini-sc:w-[400px] xs:w-[250px] '>
             <h2 className='text-[34px] sm-sc:text-[26px] underline decoration-treColor1 decoration-2'>Get Raffle Ticket Now</h2>
             <p className='text-[16px] leading-7 sm-sc:text-[12px] sm-sc:leading-4'>
               Remember to buy multiple tickets to increase your odds of winning,
@@ -23,9 +23,9 @@ function GetRaffle() {
               Disclaimer: this does not guarantee your winning, only increases
               your chances.
             </p>
-            <div className='list-none flex gap-[2rem] pt-[1rem] font-bold'>
+            <div className='list-none flex gap-[2rem] pt-[1rem] font-bold '>
               {Data.map((data, i) => (
-                <li className='text-xl sm-sc:text-[16px]' key={i}>
+                <li className='text-xl sm-sc:text-[16px] xs:text-[12px]' key={i}>
                   {data.days}
                   <br />
                   {data.word}
@@ -33,10 +33,10 @@ function GetRaffle() {
               ))}
             </div>
           </div>
-          <div className='flex gap-6 mt-[1rem]  sm-sc:w-[350px] mini-sc:w-[600px] lg-sc:w-[700px]'>
+          <div className='flex gap-6 mt-[1rem] sm-sc:w-[350px] mini-sc:w-[600px] lg-sc:w-[700px] xs:w-[250px]'>
             <a href='/'>
               <Button
-                className='bg-treColor1 rounded-md border-2 text-[#ffffff] pr-[2rem] pl-[2rem] pt-[1rem] pb-[1rem] sm-sc:text-[12px]'
+                className='bg-treColor1 rounded-md border-2 text-[#ffffff] pr-[2rem] pl-[2rem] pt-[1rem] pb-[1rem] sm-sc:text-[12px] xs:text-[8.5px]'
                 title='Play Raffle Now'
               />
             </a>

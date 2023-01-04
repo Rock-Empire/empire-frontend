@@ -20,7 +20,7 @@ function MailList() {
   return (
     <React.Fragment>
       <div
-        className='flex flex-col text-center w-full h-[40vh] bg-no-repeat font-normal bg-cover text-center text-[#ffffff] flex justify-center items-center mt-[3rem]'
+        className='flex flex-col text-center w-full h-[40vh] bg-no-repeat font-normal bg-cover text-center text-[#ffffff] flex justify-center items-center mt-[3rem] xs:w-[360px]'
         style={myStyle}
       >
         <h1 className='text-[34px] text-[#ffffff] sm-sc:text-[24px]'>

@@ -7,6 +7,7 @@ import axios from "axios";
 import Cookies from "js-cookie";
 import { AUTH_ACTIONS } from "../../store/AuthSlice";
 import { LoginSchema } from "../../components/FormikErrors";
+import { apiPost } from "../../utils/apiHelpers";
 
 function Signin({ handleToggle, toggle }) {
   const dispatch = useDispatch();
@@ -25,11 +26,8 @@ function Signin({ handleToggle, toggle }) {
           setTimeout(() => {
             // Your backend logic goes below
             try {
-              axios.post(
-                `${process.env.REACT_APP_API}/signin`,
-                values
-              )
-              .then(res => {
+              apiPost('/signin', values)
+              .then((res) => {
                 axios.defaults.headers.common["authorization"] = res.data.token;
                 Cookies.set("token", JSON.stringify(res.data.token));
                 Cookies.set("isAuthenticated", true);
@@ -39,7 +37,7 @@ function Signin({ handleToggle, toggle }) {
                 } else {
                   navigate("/sign-in");
                 }
-              })
+              });
             } catch (error) {
               console.log(error);
             }

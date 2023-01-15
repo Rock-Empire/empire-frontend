@@ -4,7 +4,6 @@ import {
   Routes as RouterCover,
   Route,
 } from "react-router-dom";
-// import { AuthProvider } from "../store/context";
 import SignupPage from "../pages/SignupPage";
 import SigninPage from "../pages/SigninPage";
 import Homepage from "../pages/Homepage";
@@ -38,7 +37,6 @@ function Routes() {
           <Route path='/FAQ' element={<FAQ />} />
           <Route path='/play-ticket' element={<PlayRafflePage />} />
           <Route path='/blog/:postId' element={<BlogDetails />} />
-          {/* <Route path='/blog/:postId' render={({match}) => (<BlogDetails postId={match.params.postId} />) } /> */}
           <Route path='/checkout' element={<CheckoutPage />} />
           <Route exact path='/user-profile' element={<Dashboards />} >
             <Route path='/user-profile/' element={<PersDetails />} />

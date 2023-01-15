@@ -6,7 +6,7 @@ function FooterLinks() {
   return (
     <React.Fragment>
     <div className=' bg-[#ffffff] text-[#595959]'>
-      <div className='grid grid-cols-5 w-[1400px] m-auto items-start place-items-center leading-9 pt-[3rem] sm-sc:grid-cols-3 sm-sc:w-[350px] mini-sc:w-[700px] lg-sc:w-[1100px]'>
+      <div className='grid grid-cols-5 w-[1400px] m-auto items-start place-items-center leading-9 pt-[3rem] sm-sc:grid-cols-3 sm-sc:w-[350px] mini-sc:w-[700px] lg-sc:w-[1100px] xs:w-[300px]'>
         <div className='text-[12px] justify-items-start'>
           <ul>
             <a href='/'><li><img className='relative left-[-3rem] mb-[10px] w-[150px] h-[50px] ' src={Logo} alt='' /></li></a>

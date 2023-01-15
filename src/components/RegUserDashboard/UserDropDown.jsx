@@ -25,15 +25,15 @@ function UserDropDown() {
           <h1 className='text-[14px]'>Hello {user.firstName}</h1>
           <ul className='pt-4 leading-9'>
             <Link to='/history'>
-              <li>History</li>
+              <li className="hover:text-treColor1">History</li>
             </Link>
             <Link to='/user-profile'>
-              <li>Profile</li>
+              <li className="hover:text-treColor1">Profile</li>
             </Link>
             <Link to='/referral'>
-              <li>Referral</li>
+              <li className="hover:text-treColor1">Referral</li>
             </Link>
-            <li className='pt-6' onClick={handleLogout}>
+            <li className='pt-6 hover:text-treColor1 cursor-pointer' onClick={handleLogout}>
               Logout
             </li>
           </ul>

@@ -133,8 +133,11 @@ function Navbar() {
                 </Link>
               </div>
             ) : (
-              <div className='flex items-center gap-4'>
-                <p onClick={handleUserDropDown}>...</p>
+              <div
+                className='flex items-center gap-4 cursor-pointer'
+                onClick={handleUserDropDown}
+              >
+                <p>...</p>
                 {user.firstName + " " + user.lastName}
               </div>
             )}

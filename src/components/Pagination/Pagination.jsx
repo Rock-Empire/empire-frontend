@@ -15,7 +15,7 @@ console.log(currentPage)
       <ul className='pagination flex gap-4'>
         {pages.map((page) => (
           <li key={page} className={page === currentPage ? 'page-item active bg-[blue] p-2 text-white' : 'page-item p-2'}>
-            <a className='page-link' onClick={() => onPageChange(page)}>{page}</a>
+            <p className='page-link' onClick={() => onPageChange(page)}>{page}</p>
           </li>
         ))}
       </ul>

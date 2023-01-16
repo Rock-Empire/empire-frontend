@@ -38,7 +38,7 @@ function Routes() {
           <Route path='/play-ticket' element={<PlayRafflePage />} />
           <Route path='/blog/:postId' element={<BlogDetails />} />
           <Route path='/checkout' element={<CheckoutPage />} />
-          <Route exact path='/user-profile' element={<Dashboards />} >
+          <Route path='/user-profile' element={<Dashboards />} >
             <Route path='/user-profile/' element={<PersDetails />} />
             <Route path='/user-profile/reset-password' element={<Password />} />
           </Route>

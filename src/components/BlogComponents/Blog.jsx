@@ -17,7 +17,7 @@ function Blog() {
                   {Blog.title}
                 </h1>
                 <p className='leading-6 font-normal text-[16px] sm-sc:text-[12px]'>
-                  {Blog.body.slice(0, 161)}
+                  {Blog.body.slice(0, 161)}..
                 </p>
               </div>
               <div

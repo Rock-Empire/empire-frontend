@@ -4,7 +4,7 @@ import Pagination from "../components/Pagination/Pagination";
 import { Paginate } from "../components/Pagination/Paginate";
 
 function HistoryTable() {
-  const [count, setCount] = React.useState(5);
+  const [count] = React.useState(5);
   const [currentPage, setCurrentPage] = React.useState(1);
 
   const dataCount = UserHistoryData.length;

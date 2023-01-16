@@ -10,6 +10,7 @@ function CheckoutForm() {
     HowDidYouHearAboutUs: "",
   });
   const [count, setCount] = useState(1);
+  const [price] = useState(500)
   const handleChange = (e) => {
     setInput({ ...input, [e.target.name]: e.target.value });
   };
@@ -118,20 +119,24 @@ function CheckoutForm() {
               <h1>
                 Quantity: <span className=''>x {count}</span>
               </h1>
-              <div className='flex gap-2'>
+              <div className='flex gap-4 pt-2'>
                 <button
-                  className='bg-[#FEE9E1] text-treColor1 p-2'
+                  className='bg-[#FEE9E1] text-treColor1 p-3'
                   onClick={handleDecrement}
                 >
                   -
                 </button>
                 <button
-                  className='bg-[#FEE9E1] text-treColor1 p-2'
+                  className='bg-[#FEE9E1] text-treColor1 p-3'
                   onClick={handleIncrement}
                 >
                   +
                 </button>
               </div>
+            </div>
+            <div className="flex flex-col gap-4 text-[14px] pt-2">
+              <p>Price per ticket: N{price} </p>
+              <p>Total amount: N{count * price}</p>
             </div>
           </div>
           <div>

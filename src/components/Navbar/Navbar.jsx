@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { GrFormDown, GrFormUp } from "react-icons/gr";
 import { ImMenu } from "react-icons/im";
 import Logo from "../../assets/images/empire-logo.png";
@@ -17,7 +17,6 @@ function Navbar() {
 
   const auth = useSelector((state) => state.auth);
   const user = JSON.parse(auth.user);
-  console.log(user, "auth");
 
   const handleRaffleDropDown = () => {
     setShowRaffleDropDown(!showRaffleDropDown);
@@ -34,6 +33,8 @@ function Navbar() {
   };
 
   const handleHamburgerMenu = () => setShowHamburgerMenu(!showHamburgerMenu);
+  const handleHamburgerMenuCancel = () =>
+    setShowHamburgerMenu(!showHamburgerMenu);
 
   return (
     <React.Fragment>
@@ -41,10 +42,19 @@ function Navbar() {
         <div className=''>
           <div className='hidden sm-sc:flex sm-sc:relative sm-sc:justify-between sm-sc:align-center'>
             <div className=''>
-              <ImMenu
-                onClick={handleHamburgerMenu}
-                className='w-[50px] h-[50px] text-[#ED3833] true'
-              />
+              {!showHamburgerMenu ? (
+                <ImMenu
+                  onClick={handleHamburgerMenu}
+                  className='w-[50px] h-[50px] text-[#ED3833] true'
+                />
+              ) : (
+                <div
+                  className='text-[24px] p-2 text-[#ED3833] true'
+                  onClick={handleHamburgerMenuCancel}
+                >
+                  X
+                </div>
+              )}
             </div>
             <Link to='/'>
               <div>

@@ -29,15 +29,19 @@ export const LoginSchema = Yup.object().shape({
 });
 
 export const RegisterSchema = Yup.object().shape({
-  firstName: Yup.string()
+  firstname: Yup.string()
     .min(3, "First name is too short")
     .max(50, "The first name you entered is too long")
     .required("Required"),
-  lastName: Yup.string()
+  lastname: Yup.string()
     .min(3, "Last name is too short")
     .max(50, "The last name you entered is too long")
     .required("Required"),
-  phoneNumber: Yup.string().matches(phoneRegExp, "Phone number is not valid"),
+  username: Yup.string()
+    .min(3, "username is too short")
+    .max(50, "The username you entered is too long")
+    .required("Required"),
+  phone: Yup.string().matches(phoneRegExp, "Phone number is not valid"),
   email: Yup.string()
     .email("The email address you entered is invalid")
     .required("Required"),

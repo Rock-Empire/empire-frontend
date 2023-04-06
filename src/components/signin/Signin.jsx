@@ -6,7 +6,7 @@ import GoogleImg from "../../assets/images/Vector.png";
 function Signin() {
 
   const googleSignIn = () => {
-    console.log("google sign in");
+    console.log('google sign in')
   }
 
   return (

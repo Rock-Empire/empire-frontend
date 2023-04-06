@@ -8,7 +8,7 @@ function Dashboards() {
   return (
     <>
       <Navbar />
-      <div>X</div>
+      {/* <div>X</div> */}
       <div className='flex gap-1 bg-gray-400 pb-[3rem]'>
         <div className='w-[35.7%]'>
           <Sidenav className='' />

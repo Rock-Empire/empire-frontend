@@ -5,11 +5,11 @@ export const UserHistoryData = [
   {
     id: 1,
     image: `${BlogImg}`,
-    TicketType: 'Trip to Dubai',
+    TicketType: 'Win 10000',
     Played: 500,
     ToBeWon: 10000,
     Date: '24-10-2022',
-    Time: '10:23 PM',
+    Time: '10:23PM',
     Button: 'Win',
   },
   {
@@ -19,7 +19,7 @@ export const UserHistoryData = [
     Played: 500,
     ToBeWon: 10000,
     Date: '24-10-2022',
-    Time: '10:23 PM',
+    Time: '10:23PM',
     Button: 'Win'
   },
   {
@@ -29,27 +29,27 @@ export const UserHistoryData = [
     Played: 500,
     ToBeWon: 10000,
     Date: '24-10-2022',
-    Time: '10:23 PM',
+    Time: '10:23PM',
     Button: <Button title='Lose' />
   },
   {
     id: 4,
     image: `${BlogImg}`,
-    TicketType: 'Trip to Dubai',
+    TicketType: 'Valentine Special',
     Played: 500,
     ToBeWon: 10000,
     Date: '24-10-2022',
-    Time: '10:23 PM',
+    Time: '10:23PM',
     Button: 'Win'
   },
   {
     id: 5,
     image: `${BlogImg}`,
-    TicketType: 'Trip to Dubai',
+    TicketType: 'Valentine Special',
     Played: 500,
     ToBeWon: 10000,
     Date: '24-10-2022',
-    Time: '10:23 PM',
+    Time: '10:23PM',
     Button: <Button title='Lose' />
   },
   {
@@ -59,7 +59,7 @@ export const UserHistoryData = [
     Played: 500,
     ToBeWon: 10000,
     Date: '24-10-2022',
-    Time: '10:23 PM',
+    Time: '10:23PM',
     Button: 'Win'
   },
   {
@@ -69,17 +69,17 @@ export const UserHistoryData = [
     Played: 500,
     ToBeWon: 10000,
     Date: '24-10-2022',
-    Time: '10:23 PM',
+    Time: '10:23PM',
     Button: 'Win'
   },
   {
     id: 8,
     image: `${BlogImg}`,
-    TicketType: 'Trip to Dubai',
+    TicketType: 'Win N25000',
     Played: 500,
     ToBeWon: 10000,
     Date: '24-10-2022',
-    Time: '10:23 PM',
+    Time: '10:23PM',
     Button: 'Win'
   },
   {
@@ -89,7 +89,7 @@ export const UserHistoryData = [
     Played: 500,
     ToBeWon: 10000,
     Date: '24-10-2022',
-    Time: '10:23 PM',
+    Time: '10:23PM',
     Button: <Button title='Lose' />
   },
   {
@@ -99,7 +99,7 @@ export const UserHistoryData = [
     Played: 500,
     ToBeWon: 10000,
     Date: '24-10-2022',
-    Time: '10:23 PM',
+    Time: '10:23PM',
     Button: 'Win'
   },
 ]

@@ -45,11 +45,11 @@ function Navbar() {
               {!showHamburgerMenu ? (
                 <ImMenu
                   onClick={handleHamburgerMenu}
-                  className='w-[50px] h-[50px] text-[#ED3833] true'
+                  className='w-[50px] h-[50px] text-[#ED3833] true '
                 />
               ) : (
                 <div
-                  className='text-[24px] p-2 text-[#ED3833] true'
+                  className='text-[24px] p-2 text-[#ED3833] true '
                   onClick={handleHamburgerMenuCancel}
                 >
                   X
@@ -130,7 +130,7 @@ function Navbar() {
                 </Link>
               </ul>
             </nav>
-            {auth.auth === false ? (
+            {!user ? (
               <div className='flex justify-center gap-4 items-center mr-[3rem] sm-sc:mt-[3rem] sm-sc:ml-[5px] sm-sc:pb-[1rem]'>
                 <Link to='/sign-in'>
                   <Button className='mr-[1rem]' title='Login' />
@@ -148,7 +148,7 @@ function Navbar() {
                 onClick={handleUserDropDown}
               >
                 <p>...</p>
-                {user.firstName + " " + user.lastName}
+                {user.firstname + " " + user.lastname}
               </div>
             )}
           </div>

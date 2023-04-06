@@ -12,26 +12,27 @@ function Signup({ handleToggle, toggle }) {
     <div className=''>
       <Formik
         initialValues={{
-          firstName: "",
-          lastName: "",
-          phoneNumber: "",
+          firstname: "",
+          lastname: "",
+          username: "",
+          phone: "",
           email: "",
           dateOfBirth: "",
           password: "",
-          // terms: true,
+          terms: true,
         }}
         validationSchema={RegisterSchema}
         onSubmit={(values, actions) => {
           setTimeout(() => {
             axios
-              .post(`${process.env.REACT_APP_API}/signup`, values)
+              .post(`${process.env.REACT_APP_API}/auth/register`, values)
               .then((res) => {
                 console.log(res);
+                navigate('/sign-in');
               })
               .catch((err) => {
-                console.log(err);
+                console.log(err.response.data);
               });
-            navigate('/sign-in')
             actions.setSubmitting(false);
             actions.resetForm();
           }, 400);
@@ -48,54 +49,68 @@ function Signup({ handleToggle, toggle }) {
           <form className='flex flex-col' onSubmit={handleSubmit}>
             <div className='flex gap-[1rem]'>
               <div>
-                <label htmlFor='firstName'>
+                <label htmlFor='firstname'>
                   First Name <span className='text-treColor1'>*</span>
                 </label>
                 <input
                   className='p-[0.6rem] mt-[10px] mb-[10px] w-[100%] border border-black rounded-md'
                   type='text'
-                  name='firstName'
+                  name='firstname'
                   onChange={handleChange}
-                  value={values.firstName}
+                  value={values.firstname}
                   placeholder=''
                 />
-                {errors.firstName && touched.firstName && errors.firstName ? (
-                  <div className='text-treColor1'>{errors.firstName}</div>
+                {errors.firstname && touched.firstname && errors.firstname ? (
+                  <div className='text-treColor1'>{errors.firstname}</div>
                 ) : null}
               </div>
               <div>
-                <label htmlFor='lastName'>
+                <label htmlFor='lastname'>
                   Last Name <span className='text-treColor1'>*</span>
                 </label>
                 <input
                   className='p-[0.6rem] mt-[10px] mb-[10px] w-[100%] border border-black rounded-md'
                   type='text'
-                  name='lastName'
+                  name='lastname'
                   onChange={handleChange}
-                  value={values.lastName}
+                  value={values.lastname}
                   placeholder=''
                 />
-                {errors.lastName && touched.lastName && errors.lastName ? (
-                  <div className='text-treColor1'>{errors.lastName}</div>
+                {errors.lastname && touched.lastname && errors.lastname ? (
+                  <div className='text-treColor1'>{errors.lastname}</div>
                 ) : null}
               </div>
             </div>
-            <label htmlFor='phoneNumber'>
+            <label htmlFor='username'>
+              Username <span className='text-treColor1'>*</span>
+            </label>
+            <input
+              className='p-[0.6rem] mt-[10px] mb-[10px] w-[100%] border border-black rounded-md'
+              type='text'
+              name='username'
+              onChange={handleChange}
+              value={values.username}
+              placeholder=''
+            />
+            {errors.username && touched.username && errors.username ? (
+              <div className='text-treColor1'>{errors.username}</div>
+            ) : null}
+            <label htmlFor='phone'>
               Phone Number <span className='text-treColor1'>*</span>
             </label>
             <input
               className='p-[0.6rem] mt-[10px] mb-[10px] w-[100%] border border-black rounded-md'
               type='tel'
-              name='phoneNumber'
+              name='phone'
               onChange={handleChange}
-              value={values.phoneNumber}
+              value={values.phone}
               placeholder=''
             />
-            {errors.phoneNumber && touched.phoneNumber && errors.phoneNumber ? (
-              <div className='text-treColor1'>{errors.phoneNumber}</div>
+            {errors.phone && touched.phone && errors.phone ? (
+              <div className='text-treColor1'>{errors.phone}</div>
             ) : null}
             <label htmlFor='email'>
-              email <span className='text-treColor1'>*</span>
+              Email <span className='text-treColor1'>*</span>
             </label>
             <input
               className='p-[0.6rem] mt-[10px] mb-[10px] w-[100%] border border-black rounded-md'
@@ -127,7 +142,7 @@ function Signup({ handleToggle, toggle }) {
               onClick={handleToggle}
             ></FaEye>
             <label htmlFor='password'>
-              password <span className='text-treColor1'>*</span>
+              Password <span className='text-treColor1'>*</span>
             </label>
             <input
               className='p-[0.5rem] mt-[10px] mb-[10px] w-[100%] border border-black rounded-md'

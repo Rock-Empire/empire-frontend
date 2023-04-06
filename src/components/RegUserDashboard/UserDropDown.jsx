@@ -22,7 +22,7 @@ function UserDropDown() {
     <>
       {auth.auth === true ? (
         <div className='bg-white w-[150px]  absolute right-12 p-2 text-[14px] font-500'>
-          <h1 className='text-[14px]'>Hello {user.firstName}</h1>
+          <h1 className='text-[14px]'>Hello {user.username}</h1>
           <ul className='pt-4 leading-9'>
             <Link to='/history'>
               <li className="hover:text-treColor1">History</li>

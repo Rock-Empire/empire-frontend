@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Button from "../Button";
 
 function CheckoutForm() {
@@ -10,7 +11,8 @@ function CheckoutForm() {
     HowDidYouHearAboutUs: "",
   });
   const [count, setCount] = useState(1);
-  const [price] = useState(500)
+  const [price] = useState(500);
+
   const handleChange = (e) => {
     setInput({ ...input, [e.target.name]: e.target.value });
   };
@@ -18,14 +20,14 @@ function CheckoutForm() {
     e.preventDefault();
   };
   const handleIncrement = (e) => {
-    e.preventDefault()
-    setCount((count) => ( count + 1 ));
+    e.preventDefault();
+    setCount((count) => count + 1);
   };
 
   const handleDecrement = (e) => {
     e.preventDefault();
-    if(count === 1) return;
-    setCount((count) => ( count - 1 ));
+    if (count === 1) return;
+    setCount((count) => count - 1);
   };
 
   const Form = (
@@ -116,9 +118,9 @@ function CheckoutForm() {
               <p>Raffle Type: Win N10,000 weekly </p>
             </div>
             <div className=''>
-              <h1>
+              <label htmlFor='quantity'>
                 Quantity: <span className=''>x {count}</span>
-              </h1>
+              </label>
               <div className='flex gap-4 pt-2'>
                 <button
                   className='bg-[#FEE9E1] text-treColor1 p-3'
@@ -134,18 +136,20 @@ function CheckoutForm() {
                 </button>
               </div>
             </div>
-            <div className="flex flex-col gap-4 text-[14px] pt-2">
+            <div className='flex flex-col gap-4 text-[14px] pt-2'>
               <p>Price per ticket: N{price} </p>
               <p>Total amount: N{count * price}</p>
             </div>
           </div>
           <div>
-            <Button
-              title='Proceed to checkout'
-              className='bg-treColor1 w-[100%] mt-[1rem] p-[1rem] text-[#ffffff] rounded-md text-[16px]sm-sc:w-[100%] sm-sc:mb-[1rem]'
-              type='submit'
-              onClick={handleSubmit}
-            />
+            <Link to='/congratulations'>
+              <Button
+                title='Proceed to checkout'
+                className='bg-treColor1 w-[100%] mt-[1rem] p-[1rem] text-[#ffffff] rounded-md text-[16px]sm-sc:w-[100%] sm-sc:mb-[1rem]'
+                type='submit'
+                onClick={handleSubmit}
+              />
+            </Link>
           </div>
         </div>
       </div>
